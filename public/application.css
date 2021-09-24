@@ -1,0 +1,32 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 2rem 0;
+  background-color: black;
+}
+
+.card {
+  background-color: rgb(61, 61, 61);
+  margin: 1rem;
+  width: 18rem;
+  padding: 1rem;
+  color: whitesmoke;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.footer {
+  background-color: rgb(61, 61, 61);
+  color: whitesmoke;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+}
