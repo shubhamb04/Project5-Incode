@@ -2,17 +2,11 @@ const express = require('express');
 const path = require('path')
 const homeRouter = require("./routes/home")
 const bodyParser  = require('body-parser'); 
-const { JSDOM } = require( "jsdom" );
-const { window } = new JSDOM( "" );
-const $ = require("jquery")(window);
 require('dotenv').config();
 
 
 //init app
 const app = express();
-
-
-// app.set('views', path.join(__dirname, 'views'));
 
 //fetch data from the request
 app.use(bodyParser.urlencoded({extended:false}));
