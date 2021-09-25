@@ -1,11 +1,26 @@
-CREATE TABLE user (
-    user_id SERIAL PRIMARY KEY NOT NULL,
-    email VARCHAR(100) NOT NULL,
-    password VARCHAR(100) NOT NULL,
-    UNIQUE (email),
-    created_at TIMESTAMPTZ DEFAULT now() 
+DROP TABLE IF EXISTS ratings;
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users (
+id SERIAL PRIMARY KEY,
+firstname VARCHAR(255) NOT NULL,
+lastname VARCHAR(255) NOT NULL,
+email VARCHAR(255) NOT NULL UNIQUE,
+password CHAR(60) NOT NULL,
+created_at TIMESTAMPTZ DEFAULT now()
 );
 
-CREATE TABLE rating (
-    
-)
+CREATE TABLE ratings (
+movie_id BIGINT NOT NULL,
+user_id BIGINT NOT NULL,
+rating SMALLINT NOT NULL ,
+created_at TIMESTAMPTZ DEFAULT now(),
+PRIMARY KEY(movie_id, user_id),
+CHECK (rating BETWEEN 0 AND 5),
+CONSTRAINT fk_user
+FOREIGN KEY (user_id) 
+REFERENCES users(id) 
+ON DELETE CASCADE
+ON UPDATE CASCADE 
+);
+
