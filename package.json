@@ -5,9 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "create-db": "psql -U postgres -f ./sql/create-db.sql",
-    "create-tables": "psql -U postgres -d project5 -f ./sql/create-tables.sql",
-    "seed-tables": "psql -U postgres -d project5 -f ./sql/seed-tables.sql"
+    "create-db": "psql -U postgres -f sql/create_db.sql",
+    "create-tables": "psql -U postgres -d incode_project_05 -f sql/create_tables.sql",
+    "seed-tables": "psql -U postgres -d incode_project_05 -f sql/seed_tables.sql",
   },
   "author": "",
   "license": "ISC",
