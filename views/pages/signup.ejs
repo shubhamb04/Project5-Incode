@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="form-style.css">
+    <script src="signup.js" defer></script>
+</head>
+<body>
+    <div class="signup-outer-container">
+        <div class="signup-inner-container">
+            <h1>Sign up</h1>
+            <form id="signup"  novalidate>
+                <div class="form-control">
+                    <label for="firstname">First name</label>
+                    <input name="firstname" id="firstname" type="text" required>
+                    <div class="errorMessage firstname"></div>
+                </div>
+                <div class="form-control">
+                    <label for="lastname">Last name</label>
+                    <input name="lastname" id="lastname" type="text" required>
+                    <div class="errorMessage lastname"></div>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="text" required>
+                    <div class="errorMessage email"></div>
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input name="password" id="password" type="password" required>
+                    <div class="errorMessage password"></div>
+                </div>
+                <div class="form-control">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input name="confirmPassword" id="confirmPassword" type="password" required>
+                    <div class="errorMessage confirmPassword"></div>
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>   
+    <div class="already-signup">
+        <p ><a href="/login">Already have an account? Log in</a></p>
+    </div>
+</body>
+</html>
