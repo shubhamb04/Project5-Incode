@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="form-style.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <div class="login-outer-container">
+        <div class="login-inner-container">
+            <h1>Login</h1>
+            <form id="login" novalidate>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="text" required>
+                    <div class="errorMessage email">&nbsp;</div>
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input name="password" id="password" type="password" required>
+                    <div class="errorMessage password">&nbsp;</div>
+                </div>
+                <div class="errorMessage credentials">&nbsp;</div>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>   
+    <div class="already-signup">
+        <p ><a  href="/signup">Don’t have an account? Sign up</a></p>
+    </div>
+</body>
+</html>
