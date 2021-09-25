@@ -23,7 +23,7 @@
     "jsdom": "^17.0.0",
     "jsonwebtoken": "^8.5.1",
     "node-fetch": "^3.0.0",
-    "nodemon": "^2.0.12",
+    "nodemon": "^2.0.13",
     "pg-promise": "^10.11.0"
   }
 }
