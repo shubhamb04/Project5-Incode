@@ -4,23 +4,19 @@
 }
 
 .box {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
   margin: auto;
-  padding: 2rem 0;
+  padding: 2rem;
   background-color: black;
 }
 
 .card {
   background-color: rgb(61, 61, 61);
-  margin: 1rem;
-  width: 18rem;
+  margin: 2rem 0;
   padding: 1rem;
   color: whitesmoke;
-}
-
-.card-body {
-  text-align: center;
 }
 
 .footer {
@@ -29,4 +25,10 @@
   text-align: center;
   width: 100%;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    display: block;
+  }
 }
