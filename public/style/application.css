@@ -17,6 +17,31 @@
   margin: 2rem 0;
   padding: 1rem;
   color: whitesmoke;
+  height: auto;
+}
+
+.card img {
+  cursor: pointer;
+}
+
+.overview {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  max-height: 100%;
+  transition: 0.3s ease-in;
+  opacity: 0;
+  align-items: center;
+  overflow: scroll;
+}
+
+.card:hover,
+.overview:hover {
+  /* transform: translateY(0); */
+  opacity: 1;
 }
 
 .footer {
