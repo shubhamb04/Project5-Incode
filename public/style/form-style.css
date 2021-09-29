@@ -7,7 +7,16 @@
 }
 
 body {
-  background: #212529;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('collagemovie.jpg') ;
+  transform: perspective(500px) rotateX(10deg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*background: #212529;
   font-family: sans-serif;
   color: #fff;
   display: flex;
@@ -18,7 +27,15 @@ body {
 }
 
 .outer-container {
-  border-radius: 5px;
+  width: 300px;
+  height: 380px;
+  padding: 40px 25px;
+  background :white;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  /*border-radius: 5px;
   border: 1px solid white;
   max-width: 500px;
   min-width: 300px;
@@ -27,7 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto;
-  justify-content: space-between;
+  justify-content: space-between;*/
 }
 
 .inner-container {
@@ -36,8 +53,11 @@ body {
 }
 
 .inner-container h1 {
-  margin: 30px 0;
-  text-align: center;
+  /*margin: 30px 0;
+  text-align: center;*/
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .form-control label {
@@ -46,13 +66,15 @@ body {
 }
 
 .form-control input {
-  border: 2px solid #f0f0f0;
+  border: 2px solid black;
   border-radius: 4px;
   display: block;
   font-family: inherit;
   font-size: 16px;
   padding: 10px;
   width: 100%;
+  margin: 0 0 5px 0;
+  position: relative;
 }
 
 .form-control input:focus {
@@ -69,18 +91,29 @@ body {
 }
 
 button {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 4px;
-  outline: none;
-  border: none;
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  color: #fff;
+  background-color: black;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  
+  
 }
 
 .already-signup {
   margin: 2rem auto;
+  font-size: 18px;
+  
 }
 
 .already-signup a {
-  color: #fff;
+  color:whitesmoke;
 }
