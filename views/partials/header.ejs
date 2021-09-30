@@ -26,7 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="application.css" />
+    <link rel="stylesheet" href="/style/application.css" />
     <script src="data.js" defer></script>
   </head>
   <body>
@@ -52,7 +52,7 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown genre-parent">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -61,16 +61,12 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Filter
+                Filter By Genre
               </a>
               <ul
-                class="dropdown-menu"
+                class="dropdown-menu genre-list"
                 aria-labelledby="navbarScrollingDropdown"
-              >
-                <li><a class="dropdown-item" href="#">By Date</a></li>
-                <li><a class="dropdown-item" href="#">By Rating</a></li>
-                <li><a class="dropdown-item" href="#">By Genre</a></li>
-              </ul>
+              ></ul>
             </li>
 
             <% if (email) { %>
