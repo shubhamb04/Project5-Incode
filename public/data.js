@@ -70,9 +70,11 @@ https://api.themoviedb.org/3/genre/movie/list?${api_key}`).then(data => {
   $(".genre-list").html(listItems)
 })
 
-$(".genre-list li .genre-item").each((i, val) => {
-  console.log(val);
-})
+$(".genre-parent .genre-list").on("click", (e) => {
+  const genreId = e.target.id
+  const targetedGenre = `${genre_url}${genreId}&${api_key}`
+  fetchMovies(targetedGenre)
+  })
 
 
 
